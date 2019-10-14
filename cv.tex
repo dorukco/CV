@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin-SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{fullpage} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Doruk \textsc{Coskun}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Date of Birth:} & 9 September 1989 \\
+\textsc{Address:} & Markmannsgasse 9-11, 50667 Cologne, Germany \\
+\textsc{Phone:} & +491605801160‬ \\
+\textsc{email:} & \href{mailto:dcoskun@protonmail.com}{dcoskun@protonmail.com}
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{13cm}}
+
+\textsc{Feb 2017-Present} & \textbf{Backend Engineer} at \textsc{MobiLab Solutions GmbH}, Cologne | Germany \emph{}\\
+& \footnotesize{\textbf{Project : Mobility inside Platform}
+\newline
+Technologies: Kotlin, Spring Boot, Reactor, Docker, Kubernetes, PostgreSQL, GCP, Travis CI, Terraform
+}\\
+& \footnotesize{\textbf{Project : MobiLab Payment SDK - Stash!}
+\newline
+Technologies: Kotlin, Spring Boot, JPA/Hibernate, Docker, Kubernetes, PostgreSQL, GCP, Travis CI 
+}\\
+& \footnotesize{\textbf{Project : Vapiano Mobile Application Infrastructure}
+\newline
+Technologies : GCP, Kubernetes, Docker, MSSQL, PostgreSQL, Travis CI  
+}\\
+& \footnotesize{\textbf{Project : Metro Systems Service Phalanx}
+\newline
+Technologies : Java, Spring, JAX-RS, Solr, Kubernetes, Docker, Cassandra, Hystrix, XSLT, Jenkins 
+}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Nov 2014-Jan 2017} & \textbf{Software Engineer} at \textsc{Sqills International B.V.}, Istanbul | Turkey \emph{}\\
+& \footnotesize{\textbf{Project : S3 Passenger Railway Suite}
+\newline
+Technologies : Java, EJB 3, JPA/Hibernate, JSF+Primefaces, JAX-WS, Glassfish, JBoss, PostgreSQL, Hazelcast, Android
+}\\
+\multicolumn{2}{c}{} \\
+
+
+\textsc{Feb-Jul 2014} & \textbf{Research Intern} at \textsc{Laboratoire d'Informatique de Grenoble}, Grenoble | France \emph{}\\
+& \footnotesize{\textbf{Project : Online activity recognition on smart-phone from accelerometer and audio data : a sequence model learning approach with poorly labelled data}
+\newline
+Supervisor: François PORTET
+}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r|p{14cm}}
+
+\textsc{2013 - 2014} & Master of Science in \textsc{}\textsc{Computer Science} \\& \normalsize\textbf{Université Joseph Fourier (Grenoble I)}, Grenoble | France\\
+&  Major: Artificial Intelligence and the Web\\
+& Thesis: Online activity recognition for smart-phones from accelerometer and audio data : a sequence model learning approach | \small Advisor: François \textsc{PORTET} \& David \textsc{BLACHON}  \\
+&\\
+
+%------------------------------------------------
+
+\textsc{2008 - 2012} & Bachelor of Science in \textsc{}\textsc{Computer Engineering} \\& \normalsize\textbf{Galatasaray University}, Istanbul | Turkey\\
+& Thesis: ETL Process Management with Metadata | \small Advisor: Sultan \textsc{TURHAN}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{2004 - 2008}& \textbf{Burak Bora Anatolian High School}, Istanbul | Turkey
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKİLL HIGHLIGHTS
+%----------------------------------------------------------------------------------------
+
+\section{Skill Highlights}
+
+\begin{tabular}{r|p{13cm}}
+Programming Languages: & Java, Kotlin \\
+Frameworks:  & Spring, Java EE, JPA/Hibernate, JUnit, Mockito, Hystrix, Reactor, RxJava, Liquibase \\
+Databases: & PostgreSQL, MySQL, Cassandra, Apache Solr, Elasticsearch \\
+Orchestration / Infrastructure: & Docker, Kubernetes, Terraform, Travis CI \\
+Cloud: & Google Cloud Platform \\
+Monitoring: & Prometheus, Grafana \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Certificates}
+
+\begin{tabular}{r|p{13cm}}
+\textsc{Sept 2013 - Nov 2014}  & The Scientific and Technological Research Council of Turkey, Scholarship \normalsize\\
+
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{tabular}{r|p{14cm}}
+\textsc{April} 2015 &\normalsize\textbf {Phone position/placement detection using accelerometer: Impact on activity recognition} \\
+& Sensor Networks and Information Processing (ISSNIP) \\
+& 2015 IEEE Tenth International Conference on Intelligent Sensors \\
+& Authors: Doruk \textsc{Coskun}, Ozlem Durmaz \textsc{Incel}, Atay \textsc{Ozgovde} \normalsize\\ \\
+
+\textsc{Dec} 2014 &\normalsize\textbf {On-line Context Aware Physical Activity Recognition from the Accelerometer and Audio Sensors of Smartphones} \\
+& Ambient Intelligence, Lecture Notes in Computer Science Volume 8850 \\
+& Authors: David \textsc{Blachon}, Doruk \textsc{Coskun}, François \textsc{Portet} \normalsize\\ \\
+
+\textsc{April} 2014 &\normalsize\textbf {Position-aware activity recognition on mobile phones} \\
+& 22th Signal Processing and Communications Applications Conference \\
+& Authors: Doruk \textsc{Coskun}, Ozlem Durmaz \textsc{Incel}, Atay \textsc{Ozgovde}
+
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{r|p{13cm}}
+\textsc{English:} & Fluent\\
+
+\textsc{French:} & Upper Intermediate\\
+
+\textsc{German:} & Elementary\\
+
+\textsc{Turkish:} & Mothertongue\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+Technology, Football, Basketball, Swimming, Cinema, Music, Travelling\\
+
+
+
+
+
+\end{document}
