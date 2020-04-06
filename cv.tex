@@ -35,6 +35,7 @@
 
 \usepackage{fullpage} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\addtolength{\textheight}{1.75in}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -43,6 +44,8 @@
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{longtable}
 
 \begin{document}
 
@@ -72,43 +75,66 @@
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{13cm}}
+\begin{longtable}{r|p{13cm}}
 
 \textsc{Feb 2017-Present} & \textbf{Senior Backend Engineer} at \textsc{MobiLab Solutions GmbH}, Cologne | Germany \emph{}\\
-& \footnotesize{\textbf{Project : Daimler AG: Car \& Customer Platform}
-\newline
-Technologies: Java, Spring Boot, Docker, Kubernetes, PostgreSQL, Helm
-}\\
-\newline
 & \footnotesize{\textbf{Project : Data Integration Platform}
 \newline
-Technologies: Kotlin, Spring Boot, Docker, Kubernetes, Azure SQL, PostgreSQL, Apache Kafka, Elasticsearch, Google Cloud Platform, Microsoft Azure, Travis CI, Terraform
-}\\
-& \footnotesize{\textbf{Project : Mobility inside Platform}
-\newline
-Technologies: Kotlin, Spring Boot, Reactor, Docker, Kubernetes, PostgreSQL, Google Cloud Platform, Travis CI, Terraform
+As a lead backend engineer, I had the following responsibilities:
+\begin{itemize}
+  \item Working on the backend development of the high throughput of the data integration platform featuring comprehensive content indexing, aggregation, and real-time notification streams.
+  \item Designing, building and managing the application infrastructure on Azure.
+  \item Technologies: Kotlin, Spring Boot, Docker, Kubernetes, Azure SQL, PostgreSQL, Apache Kafka, Elasticsearch, Google Cloud Platform, Microsoft Azure, Travis CI, Terraform
+\end{itemize}
 }\\
 & \footnotesize{\textbf{Project : MobiLab Payment SDK - Stash!}
 \newline
-Technologies: Kotlin, Spring Boot, JPA/Hibernate, Docker, Kubernetes, PostgreSQL, Google Cloud Platform, Travis CI 
+As a lead backend engineer, I had the following responsibilities:
+\begin{itemize}
+  \item Designing and implementing the backend of the payment SDK running on Java to help merchants to integrate payment methods into their mobile applications.
+  \item Creating and maintaining the continuous deployment automation process using Kubernetes and Travis CI.
+  \item Designing, building and managing the application infrastructure on Google Cloud Platform.
+  \item Technologies: Kotlin, Spring Boot, JPA/Hibernate, Docker, Kubernetes, PostgreSQL, Google Cloud Platform, Travis CI 
+\end{itemize}
 }\\
 & \footnotesize{\textbf{Project : Vapiano Mobile Application Infrastructure}
 \newline
-Technologies : Java, Google Cloud Platform, Kubernetes, Docker, MSSQL, PostgreSQL, Travis CI  
+As a lead backend engineer, I had the following responsibilities:
+\begin{itemize}
+  \item Designing and implementing the cloud migration from a Rancher environment in Azure to a managed Kubernetes cluster in Google Cloud Platform.
+  \item Implementing an automated data migration flow from MSSQL to PostgreSQL.
+  \item Technologies: Java, Google Cloud Platform, Kubernetes, Docker, MSSQL, PostgreSQL, Travis CI   
+\end{itemize}
 }\\
 & \footnotesize{\textbf{Project : Metro Systems Service Phalanx}
 \newline
-Technologies : Java, Spring, JAX-RS, Apache Solr, Kubernetes, Docker, Cassandra, Hystrix, XSLT, Jenkins 
+As a backend engineer, I had the following responsibilities:
+\begin{itemize}
+  \item Working on the backend development and maintenance of the single point of truth, running data transformations and imports for the product data.
+  \item Building and deploying Docker containers to break up the existing monolithic application into dozens of microservices, increasing scalability and optimizing speed.
+  \item Creating and enhancing the continuous deployment automation process on Jenkins and Kubernetes.
+  \item Implementing the cloud migration from Rackspace to Google Cloud Platform.
+  \item Technologies : Java, Spring, JAX-RS, Apache Solr, Kubernetes, Docker, Cassandra, Hystrix, XSLT, Jenkins  
+\end{itemize}
 }\\
+& \footnotesize{\textbf{Additional Tasks at MobiLab}
+\newline
+\begin{itemize}
+  \item People manager for Java developers,  by mentoring the engineers and supporting their career development.	
+  \item Conducting feedback sessions and conflict mediation.
+\end{itemize}
+}\\
+
 \multicolumn{2}{c}{} \\
 
 \textsc{Nov 2014-Jan 2017} & \textbf{Software Engineer} at \textsc{Sqills International B.V.}, Istanbul | Turkey \emph{}\\
 & \footnotesize{\textbf{Project : S3 Passenger Railway Suite}
 \newline
-Technologies : Java, EJB 3, JPA/Hibernate, JSF+Primefaces, JAX-WS, Glassfish, JBoss, PostgreSQL, Hazelcast, Android
+Technologies : Java, EJB 3, JPA/Hibernate, JSF/Primefaces, JAX-WS, Glassfish, JBoss, PostgreSQL, Hazelcast, Android
 }\\
 \multicolumn{2}{c}{} \\
 
+\pagebreak
 
 \textsc{Feb-Jul 2014} & \textbf{Research Intern} at \textsc{Laboratoire d'Informatique de Grenoble}, Grenoble | France \emph{}\\
 & \footnotesize{\textbf{Project : Online activity recognition on smart-phone from accelerometer and audio data : a sequence model learning approach with poorly labelled data}
@@ -117,7 +143,7 @@ Supervisor: François PORTET
 }\\
 \multicolumn{2}{c}{} \\
 
-\end{tabular}
+\end{longtable}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -151,9 +177,9 @@ Supervisor: François PORTET
 
 \begin{tabular}{r|p{13cm}}
 Programming Languages: & Java, Kotlin \\
-Frameworks:  & Spring, Java EE, JPA/Hibernate, JUnit, Mockito, Hystrix, Reactor, RxJava, Liquibase \\
+Frameworks:  & Spring, Micronaut, Java EE, JPA/Hibernate, JUnit, Mockito, Hystrix, Reactor, RxJava, Liquibase \\
 Databases: & PostgreSQL, Azure SQL, MySQL, Cassandra, Apache Solr, Elasticsearch \\
-Orchestration / Infrastructure: & Docker, Kubernetes, Terraform, Travis CI, Helm \\
+Orchestration / Infrastructure: & Docker, Kubernetes, Terraform, Travis CI, Jenkins, Helm \\
 Streaming: & Apache Kafka \\
 Cloud: & Google Cloud Platform, Azure SQL \\
 Monitoring: & Prometheus, Grafana \\
